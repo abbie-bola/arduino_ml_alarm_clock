@@ -3,4 +3,4 @@ Implemented using C/C++, Python, Tensorflow, Keras, Arduino, Librosa, & Audiomen
 Status: Ongoing
 
 
-the .c[...] and.h model files were derived from alarm_lite_model.tflite
+the .c[...] and .h model files were derived from alarm_lite_model.tflite
