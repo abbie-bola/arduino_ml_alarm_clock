@@ -1,4 +1,4 @@
-# arduino_ml_alarm_clock
+# Arduino Voice Controlled Alarm Clock
 Implemented using C/C++, Python, Tensorflow, Keras, Arduino, Librosa, & Audiomentations <br>
 Status: Ongoing <br>
 Creators: @a6eline & @abbie_bola
