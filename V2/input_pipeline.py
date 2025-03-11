@@ -154,7 +154,6 @@ def generate_dataset(audio_train_tensor, label_train_tensor, audio_val_tensor, l
 
 
 ##### IMPLEMENTATION #####
-
 # Get the folder names (labels)
 labels = [label.name for label in data_dir.iterdir() if label.is_dir()]
 
@@ -205,7 +204,6 @@ print("Test Dataset Specifications (New):", test_dataset.element_spec)
 
 # Batch the datasets
 BATCH_SIZE = 64
-
 train_dataset = train_dataset.cache().shuffle(1000).batch(BATCH_SIZE).prefetch(tf.data.AUTOTUNE)
 val_dataset = val_dataset.cache().shuffle(1000).batch(BATCH_SIZE).prefetch(tf.data.AUTOTUNE)
 test_dataset = test_dataset.cache().batch(BATCH_SIZE).prefetch(tf.data.AUTOTUNE)  # no shuffle to ensure model is tested on the same dataset at all times
