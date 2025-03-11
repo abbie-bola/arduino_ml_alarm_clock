@@ -85,7 +85,7 @@ def generate_data(data_dir, labels):
     print("Preprocessing and Generating Data")
     # iterates through the label dict
     for label in labels:
-        label_dir = data_dir / label # concatenates label name to root folder -> creates subfolder directory for that specific label e.g       '/home/V4audio' / 'cat' -> /home/V4audio/cat 
+        label_dir = data_dir / label # concatenates label name to root folder -> creates subfolder directory for that specific label e.g '/home/V4audio' / 'cat' -> /home/V4audio/cat 
         for audio_file in label_dir.iterdir(): # iterates through each audio file in label_dir 
             if audio_file.suffix == '.wav': # if audio is .wav file, load, resample audio; append resampled audio and corresponding integer labels into their respective lists
                 audio = load_and_resample_audio(str(audio_file))
