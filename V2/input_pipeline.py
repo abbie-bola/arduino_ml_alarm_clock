@@ -205,8 +205,8 @@ print("Test Dataset Specifications (New):", test_dataset.element_spec)
 # Batch the datasets
 BATCH_SIZE = 64
 train_dataset = train_dataset.cache().shuffle(1000).batch(BATCH_SIZE).prefetch(tf.data.AUTOTUNE)
-val_dataset = val_dataset.cache().shuffle(1000).batch(BATCH_SIZE).prefetch(tf.data.AUTOTUNE)
-test_dataset = test_dataset.cache().batch(BATCH_SIZE).prefetch(tf.data.AUTOTUNE)  # no shuffle to ensure model is tested on the same dataset at all times
+val_dataset = val_dataset.cache().batch(BATCH_SIZE).prefetch(tf.data.AUTOTUNE) # no shuffle to ensure model is validated and tested on the same dataset at all times
+test_dataset = test_dataset.cache().batch(BATCH_SIZE).prefetch(tf.data.AUTOTUNE)  
 
 
 
