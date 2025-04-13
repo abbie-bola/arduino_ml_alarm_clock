@@ -12,7 +12,7 @@ class MFCCLayer(layers.Layer):
 
         # Recalculate frame step to ensure exactly 49 frames
         desired_time_steps = 49
-        frame_step = (input_length - 652) // (desired_time_steps - 1)  # ~326 samples
+        frame_step = (input_length - 652) // (desired_time_steps - 1)  # ~319 samples
         frame_length = 652  # Keep frame length at 2 * frame step
 
         # Compute STFT
