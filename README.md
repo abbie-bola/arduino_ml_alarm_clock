@@ -1,7 +1,7 @@
 # Voice Controlled Arduino Alarm Clock (Machine Learning & Hardware Engineering Project)
 Implemented using C/C++, Python, Tensorflow, Keras, Arduino, Librosa, & Audiomentations <br>
 Status: Ongoing <br>
-Creators: @a6eline & @abbie_bola
+Creators: @a6el1n3 & @abbie_bola
 
 the .c[...] and .h model files were derived from alarm_lite_model.tflite <br> <br>
 .h and .keras model files may appear empty. They contain datatypes github is unable to load.
